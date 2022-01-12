@@ -28,10 +28,10 @@ public class CarTrip {
     public int getMyEndOdometer() {
         return myEndOdometer;
     }
-    public int getMyTime() {
+    public double getMyTime() {
         return myTime;
     }
-    public int getGallonsUsed() {
+    public double getGallonsUsed() {
         return gallonsUsed;
     }
     public void setMyStartOdometer(int value) {
