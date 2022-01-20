@@ -44,14 +44,7 @@ public class Truck {
             return false;
         }
     }
-    public int drive(double miles) {
-        if (enoughFuel(miles)== false) {
-            return 0;
-        }
-        else {
-            fuel -= ((mpg*fuel)-miles)/mpg;
-        }
-    }
+
 
 
 }

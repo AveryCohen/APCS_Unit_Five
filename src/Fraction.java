@@ -4,10 +4,8 @@ public class Fraction {
 
     Fraction(int n, int d) {
         int m = gcd(n, d);
-        if (m != 0) {
             n = n / m;
             d = d / m;
-        }
         if ((Math.abs(n) != n && Math.abs(d) == d) || (Math.abs(d) != d && Math.abs(n) == n)) {
             numerator = Math.abs(n) * -1;
             denominator = Math.abs(d);
@@ -68,10 +66,10 @@ public class Fraction {
         return new Fraction(fn, fd);
     }
     public String toString() {
-        if(numerator >= denominator) {
+        if(Math.abs(numerator) >= Math.abs(denominator)) {
             int x = numerator / denominator;
-            numerator = Math.abs(numerator) % denominator;
-            return x + " " + numerator + "/" + denominator;
+            int strNumerator = Math.abs(numerator) % denominator;
+            return x + " " + strNumerator + "/" + denominator;
         }
         else {
             return numerator + "/" + denominator;
