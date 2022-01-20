@@ -14,8 +14,30 @@ public class Fraction {
         }
 
     }
-    public int gcd(int a, int m) {
+    Fraction() {
+        numerator = 1;
+        denominator = 1;
+    }
+    public static Fraction add(Fraction f1, Fraction f2) {
 
+    }
+    public static Fraction subtract(Fraction f1, Fraction f2) {
+
+    }
+    public static Fraction multiply(Fraction f1, Fraction f2) {
+
+    }
+    public static Fraction divide(Fraction f1, Fraction f2) {
+
+    }
+    public int gcd(int numerator, int denominator) {
+
+    }
+    public int getNumerator() {
+        return this.numerator;
+    }
+    public int getDenominator() {
+        return this.denominator;
     }
 
 
